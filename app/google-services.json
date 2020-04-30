@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "825058146759",
+    "firebase_url": "https://e-pharm-db820.firebaseio.com",
+    "project_id": "e-pharm-db820",
+    "storage_bucket": "e-pharm-db820.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:825058146759:android:4ea830fa0c4918ede241e2",
+        "android_client_info": {
+          "package_name": "com.saikat.e_pharm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "825058146759-0o1k4ao0or4uuurepcjo41e0g3ko4api.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.saikat.e_pharm",
+            "certificate_hash": "7cdce7dd8d1fb0d13164f6c228edbb4197e852f8"
+          }
+        },
+        {
+          "client_id": "825058146759-9rsts88nq6vp4a5la1nlg25ea93inn9k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCsJJF9azDSqinGGAIUaudWmBNz4yLCdjQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "825058146759-9rsts88nq6vp4a5la1nlg25ea93inn9k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

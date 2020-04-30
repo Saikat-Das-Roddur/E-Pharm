@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:icon="@drawable/ic_home_circle_white_36dp"
+        android:iconTintMode="@color/colorPrimary"
+        android:title="Home"
+        android:id="@+id/dashBoard"
+        android:orderInCategory="0"
+        />
+    <item
+        android:icon="@drawable/ic_clipboard_list_white_36dp"
+        android:id="@+id/myOrders"
+        android:title="My Orders"
+        android:orderInCategory="1"
+        />
+    <item
+        android:id="@+id/addProducts"
+        android:title=""
+        android:orderInCategory="2"
+        />
+    <item
+        android:icon="@drawable/ic_account_circle_white_36dp"
+        android:id="@+id/others"
+        android:title="My Account"
+        android:orderInCategory="3"
+        />
+    <item
+        android:icon="@drawable/ic_menu_white_36dp"
+        android:id="@+id/menuItem"
+        android:title="Menu"
+        android:iconTint="@null"
+        android:orderInCategory="4"
+        />
+</menu>

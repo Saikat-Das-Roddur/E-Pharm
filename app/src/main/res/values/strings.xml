@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">E-Pharm</string>
+    <!-- Slide -->
+    <string name="slide1_title">Reasonable Price</string>
+    <string name="slide1_Description">We provide medicine without any delivery charge and reasonable price</string>
+    <string name="slide2_title">Fast Delivery</string>
+    <string name="slide2_Description">Our boy located beside you to serve you first</string>
+    <string name="slide3_title">We Need Permission</string>
+    <string name="slide3_Description">We need your camera and location permission to upload your prescription and for fast delivery </string>
+    <string name="slide4_title">Blog For Awareness</string>
+    <string name="slide4_Description">We provide  blog for your health care and daily health issues</string>
+
+    <!-- Drawer -->
+    <!-- SubDrawer1 -->
+    <string name="menu_items">Menu</string>
+    <string name="home">Home</string>
+    <string name="cart">My Orders</string>
+    <string name="add_prescription">Add Prescription</string>
+    <string name="history">My Histories</string>
+    <!-- SubDrawer2 -->
+    <string name="others">Others</string>
+    <string name="settings">Settings</string>
+    <string name="log_out">Log Out</string>
+    <string name="support">Support</string>
+
+    <string name="account_register">Not an account? SignUp</string>
+    <string name="account_log_in">Got an account? Log In</string>
+    <string name="description">Please Enter your Medicine details: Eg. Name, Quantity and weight</string>
+    <string name="noti_delivery">Send notification when delivery is on progress</string>
+    <string name="noti_offer">Send notification when new offers are added</string>
+    <string name="account_settings">Account Settings</string>
+    <string name="my_orders">My Orders</string>
+
+    <string name="enter_name">Name</string>
+    <string name="enter_email">E-mail(optional)</string>
+    <string name="enter_contact">Contact no (required)</string>
+    <string name="enter_password">Password</string>
+    <string name="enter_confirm">Confirm Password</string>
+    <string name="enter_email_or_contact">E-mail or contact</string>
+</resources>
