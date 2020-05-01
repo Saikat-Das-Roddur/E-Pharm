@@ -3,13 +3,13 @@ package com.saikat.e_pharm.Model;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-public class SliderImages implements Parcelable {
+public class Slider implements Parcelable {
     String _id;
     String imageTitle;
     String imageDescription;
     Boolean isActive;
 
-    public SliderImages(String _id, String imageTitle, String imageDescription, Boolean isActive) {
+    public Slider(String _id, String imageTitle, String imageDescription, Boolean isActive) {
         this._id = _id;
         this.imageTitle = imageTitle;
         this.imageDescription = imageDescription;
@@ -48,7 +48,7 @@ public class SliderImages implements Parcelable {
         isActive = active;
     }
 
-    protected SliderImages(Parcel in) {
+    protected Slider(Parcel in) {
         _id = in.readString();
         imageTitle = in.readString();
         imageDescription = in.readString();
@@ -74,15 +74,15 @@ public class SliderImages implements Parcelable {
     }
 
     @SuppressWarnings("unused")
-    public static final Parcelable.Creator<SliderImages> CREATOR = new Parcelable.Creator<SliderImages>() {
+    public static final Parcelable.Creator<Slider> CREATOR = new Parcelable.Creator<Slider>() {
         @Override
-        public SliderImages createFromParcel(Parcel in) {
-            return new SliderImages(in);
+        public Slider createFromParcel(Parcel in) {
+            return new Slider(in);
         }
 
         @Override
-        public SliderImages[] newArray(int size) {
-            return new SliderImages[size];
+        public Slider[] newArray(int size) {
+            return new Slider[size];
         }
     };
 }
