@@ -10,6 +10,7 @@ public class UserData implements Parcelable {
     String image;
     String contactNo;
     String password;
+    String status;
     Boolean isChecked;
 
 

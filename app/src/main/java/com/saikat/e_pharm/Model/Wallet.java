@@ -3,6 +3,8 @@ package com.saikat.e_pharm.Model;
 import android.os.Parcel;
 import android.os.Parcelable;
 
+import com.saikat.e_pharm.Model.UserData;
+
 public class Wallet implements Parcelable {
     String _id;
     UserData userData;
@@ -13,13 +15,31 @@ public class Wallet implements Parcelable {
     double promoCode;
     Boolean isActive;
 
-    public Wallet(UserData userData, String _id, double totalExpenses, double previousExpenses, double currentExpenses, double remainCash) {
+    public Wallet(UserData userData, String _id, double totalExpenses, double previousExpenses, double currentExpenses, double remainCash, double promoCode, Boolean isActive) {
         this.userData = userData;
         this._id = _id;
         this.totalExpenses = totalExpenses;
         this.previousExpenses = previousExpenses;
         this.currentExpenses = currentExpenses;
         this.remainCash = remainCash;
+        this.promoCode = promoCode;
+        this.isActive = isActive;
+    }
+
+    public double getPromoCode() {
+        return promoCode;
+    }
+
+    public void setPromoCode(double promoCode) {
+        this.promoCode = promoCode;
+    }
+
+    public Boolean getActive() {
+        return isActive;
+    }
+
+    public void setActive(Boolean active) {
+        isActive = active;
     }
 
     public String get_id() {
@@ -70,13 +90,17 @@ public class Wallet implements Parcelable {
         this.remainCash = remainCash;
     }
 
+
     protected Wallet(Parcel in) {
-        userData = (UserData) in.readValue(UserData.class.getClassLoader());
         _id = in.readString();
+        userData = (UserData) in.readValue(UserData.class.getClassLoader());
         totalExpenses = in.readDouble();
         previousExpenses = in.readDouble();
         currentExpenses = in.readDouble();
         remainCash = in.readDouble();
+        promoCode = in.readDouble();
+        byte isActiveVal = in.readByte();
+        isActive = isActiveVal == 0x02 ? null : isActiveVal != 0x00;
     }
 
     @Override
@@ -86,12 +110,18 @@ public class Wallet implements Parcelable {
 
     @Override
     public void writeToParcel(Parcel dest, int flags) {
-        dest.writeValue(userData);
         dest.writeString(_id);
+        dest.writeValue(userData);
         dest.writeDouble(totalExpenses);
         dest.writeDouble(previousExpenses);
         dest.writeDouble(currentExpenses);
         dest.writeDouble(remainCash);
+        dest.writeDouble(promoCode);
+        if (isActive == null) {
+            dest.writeByte((byte) (0x02));
+        } else {
+            dest.writeByte((byte) (isActive ? 0x01 : 0x00));
+        }
     }
 
     @SuppressWarnings("unused")
