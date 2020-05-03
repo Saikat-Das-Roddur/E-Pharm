@@ -10,6 +10,9 @@ public class Orders {
     String receipt;
     String slug;
 
+    public Orders() {
+    }
+
     public Orders(ShippingUser shippingUser, String _id, String status, String date, String products, String totalPrice, String receipt, String slug) {
         this.shippingUser = shippingUser;
         this._id = _id;

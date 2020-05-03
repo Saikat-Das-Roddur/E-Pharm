@@ -14,7 +14,10 @@ public class Products implements Parcelable {
     double discount;
     Boolean isActive;
 
-    public Products(String _id,String name, Boolean isActive, String description, String image, double price, double previousPrice, double newPrice, double discount) {
+    public Products() {
+    }
+
+    public Products(String _id, String name, Boolean isActive, String description, String image, double price, double previousPrice, double newPrice, double discount) {
         this._id = _id;
         this.name = name;
         this.description = description;

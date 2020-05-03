@@ -19,7 +19,7 @@ import androidx.viewpager.widget.ViewPager;
 import com.saikat.e_pharm.Activities.MainActivity;
 import com.saikat.e_pharm.Activities.NotificationActivty;
 import com.saikat.e_pharm.Adapters.BlogAdapter;
-import com.saikat.e_pharm.Adapters.ViewPagerImageAdapter;
+import com.saikat.e_pharm.Adapters.ViewPagerSliderAdapter;
 import com.saikat.e_pharm.Model.Blog;
 import com.saikat.e_pharm.R;
 
@@ -85,7 +85,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
 
     public void showImageSlider(){
 
-        ViewPagerImageAdapter adapter = new ViewPagerImageAdapter(getContext(), imageUrls);
+        ViewPagerSliderAdapter adapter = new ViewPagerSliderAdapter(getContext(), imageUrls);
         viewPager.setAdapter(adapter);
         final Handler handler = new Handler();
         final Runnable update = new Runnable() {

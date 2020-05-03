@@ -10,7 +10,10 @@ public class Blog implements Parcelable {
     String description;
     Boolean isActive;
 
-    public Blog(String _id, int image, String title, String description,Boolean isActive) {
+    public Blog() {
+    }
+
+    public Blog(String _id, int image, String title, String description, Boolean isActive) {
         this._id = _id;
         this.image = image;
         this.title = title;

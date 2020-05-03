@@ -10,6 +10,9 @@ public class NotifyUser implements Parcelable {
     String _id;
     UserData userData;
 
+    public NotifyUser() {
+    }
+
     public NotifyUser(Boolean isActive, String title, String description, String _id, UserData userData) {
         this.isActive = isActive;
         this.title = title;

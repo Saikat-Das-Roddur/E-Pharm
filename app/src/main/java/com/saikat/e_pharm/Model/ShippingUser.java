@@ -11,7 +11,10 @@ public class ShippingUser implements Parcelable {
     String _id;
     Boolean isActive;
 
-    public ShippingUser(UserData userData,String _id, String name, String contactNo, String address) {
+    public ShippingUser() {
+    }
+
+    public ShippingUser(UserData userData, String _id, String name, String contactNo, String address) {
         this.userData = userData;
         this._id = _id;
         this.name = name;

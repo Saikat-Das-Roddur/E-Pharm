@@ -27,7 +27,7 @@
     <string name="account_log_in">Got an account? Log In</string>
     <string name="description">Please Enter your Medicine details: Eg. Name, Quantity and weight</string>
     <string name="noti_delivery">Send notification when delivery is on progress</string>
-    <string name="noti_offer">Send notification when new offers are added</string>
+    <string name="noti_offer">All Notifications</string>
     <string name="account_settings">Account Settings</string>
     <string name="my_orders">My Orders</string>
 

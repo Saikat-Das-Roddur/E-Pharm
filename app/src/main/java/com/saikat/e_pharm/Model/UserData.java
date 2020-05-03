@@ -13,7 +13,8 @@ public class UserData implements Parcelable {
     String status;
     Boolean isChecked;
 
-
+    public UserData() {
+    }
 
     public UserData(String _id, String name, String email, String image, String contactNo, String password, Boolean isChecked) {
         this._id = _id;

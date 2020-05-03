@@ -33,7 +33,9 @@
 
     </RelativeLayout>
     <RelativeLayout
+        android:id="@+id/prescTypeLayout"
         android:layout_margin="24dp"
+        android:visibility="visible"
         android:layout_centerInParent="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -202,6 +204,39 @@
                 android:layout_height="wrap_content" />
         </LinearLayout>
     </ScrollView>
-
+    <androidx.recyclerview.widget.RecyclerView
+        android:visibility="gone"
+        android:id="@+id/addPrescRv"
+        android:layout_below="@id/logoLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </androidx.recyclerview.widget.RecyclerView>
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/addBtnLayout"
+        android:layout_margin="24dp"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/addMoreImgBtn"
+            android:text="Add More"
+            android:padding="16dp"
+            android:layout_weight="1"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/circular_border_indigo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/uploadBtn"
+            android:text="Upload"
+            android:padding="16dp"
+            android:layout_weight="1"
+            android:background="@drawable/circular_border_indigo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
 
 </RelativeLayout>

@@ -11,12 +11,12 @@ import androidx.viewpager.widget.PagerAdapter;
 import com.saikat.e_pharm.R;
 import com.squareup.picasso.Picasso;
 
-public class ViewPagerImageAdapter extends PagerAdapter {
+public class ViewPagerSliderAdapter extends PagerAdapter {
 
         private Context context;
         private int[] imageUrls;
 
-        public ViewPagerImageAdapter(Context context, int[] imageUrls) {
+        public ViewPagerSliderAdapter(Context context, int[] imageUrls) {
             super();
             this.context = context;
             this.imageUrls = imageUrls;

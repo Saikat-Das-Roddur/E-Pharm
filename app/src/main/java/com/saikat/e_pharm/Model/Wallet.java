@@ -15,6 +15,9 @@ public class Wallet implements Parcelable {
     double promoCode;
     Boolean isActive;
 
+    public Wallet() {
+    }
+
     public Wallet(UserData userData, String _id, double totalExpenses, double previousExpenses, double currentExpenses, double remainCash, double promoCode, Boolean isActive) {
         this.userData = userData;
         this._id = _id;

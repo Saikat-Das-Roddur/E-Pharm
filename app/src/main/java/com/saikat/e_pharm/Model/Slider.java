@@ -9,6 +9,9 @@ public class Slider implements Parcelable {
     String imageDescription;
     Boolean isActive;
 
+    public Slider() {
+    }
+
     public Slider(String _id, String imageTitle, String imageDescription, Boolean isActive) {
         this._id = _id;
         this.imageTitle = imageTitle;
